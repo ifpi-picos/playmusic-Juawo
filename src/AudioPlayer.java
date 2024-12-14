@@ -33,7 +33,7 @@ public class AudioPlayer {
 
     // Carregando um arquivo e setando no tipo Clip
     public void loadAudio(String filepath) {
-        System.out.println("Carregando" + filepath);
+        System.out.println("Carregando " + filepath);
 
         try {
             // Criando arquivo com base no caminho passado
@@ -80,7 +80,6 @@ public class AudioPlayer {
 
     // Tocando o arquivo de música
     public void playAudio() {
-        System.out.println("PlayAudio");
         if (audioClip != null && !isPlaying) {
             System.out.println("PlayAudio Start");
             audioClip.start();
